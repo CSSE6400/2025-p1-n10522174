@@ -1,13 +1,9 @@
 import datetime 
 from . import db 
-from flask_sqlalchemy import SQLAlchemy 
+
 
 from flask import Blueprint, jsonify, request 
-from todo.models import db 
-from todo.models.todo import Todo 
-from datetime import datetime
- 
-db = SQLAlchemy()
+
  
 class Todo(db.Model): 
    __tablename__ = 'todos' 

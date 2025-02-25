@@ -12,7 +12,6 @@ TEST_TODO = {
         }
 
 
-
 class TestTodo(unittest.TestCase):
     def setUp(self):
         self.client = create_app().test_client()
